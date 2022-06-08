@@ -109,7 +109,6 @@ cloudinary.config(
   api_key = "824351776517753", 
   api_secret = "bNqxpHAJwFY-im5zSlnm8FVodXY" 
 )
-ALLOWED_HOSTS = []
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
