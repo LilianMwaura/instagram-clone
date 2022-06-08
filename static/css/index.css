@@ -1,0 +1,115 @@
+p {
+    font-family: 'Inter';
+    color: #2E4C6D;
+    font-size: smaller;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Slab';
+
+}
+
+.login-section,
+.registration-section, .comment-form {
+    font-family: 'Inter';
+    color: #423F3E;
+    font-size: smaller;
+}
+
+.login-body{
+    width: 350px;
+    margin: 15% auto 0 auto;
+    padding: 7%;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.login-page {
+    padding: 5%;
+    background: linear-gradient(90deg, #ffdf9e 50%, #fff 50%);
+    height: 100vh;
+
+}
+
+.login-pic {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 10px 13px 0 rgba(0, 0, 0, 0.2), 0 11px 25px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 50%;
+}
+
+.login-btn {
+    font-family: 'Inter';
+    color: #fff;
+    font-size: smaller;
+    width: 150px;
+    margin: 2%;
+    background-color: #e56969;
+    padding: 2%;
+    border: 1px solid #e56969;
+ 
+}
+
+.login-btn:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    transition: 250ms;
+}
+.register-page {
+    padding: 5%;
+    background: linear-gradient(90deg, #e56969 50%, #fff 50%);
+    height: 100vh;
+
+}
+.register-body {
+    width: 550px;
+    margin: 1% auto 0 auto;
+    padding: 7%;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.register-btn{
+    font-family: 'Inter';
+    color: #fff;
+    font-size: smaller;
+    width: 150px;
+    margin: 2%;
+    background-color: #ffc273;
+    padding: 2%;
+    border: 1px solid #ffc273;
+}
+.register-btn:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    transition: 250ms;
+}
+.intro-text {
+    font-family: 'Inter';
+    color: #2E4C6D;
+    font-weight: bold;
+
+}
+.display-pic {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5%;
+    box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+.image-display {
+    padding: 10%;
+}
+.love {
+    color: #c1558b;
+}
