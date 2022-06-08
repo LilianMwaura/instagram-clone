@@ -14,6 +14,8 @@ import cloudinary
 import cloudinary.uploader
 import cloudinary.api
 from pathlib import Path
+import dj_database_url
+from decouple import config,Csv
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,19 +83,33 @@ WSGI_APPLICATION = 'instagram.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'instagram',
-        'USER': 'wambui',
-        'PASSWORD': '1234'
+if config('MODE')=="dev":
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': config('DB_NAME'),
+            'USER': config('DB_USER'),
+            'PASSWORD': config('DB_PASSWORD'),
+            'HOST': config('DB_HOST'),
+            'PORT': '',
+        }
     }
-}
+else:
+   DATABASES = {
+       'default': dj_database_url.config(
+           default=config('DATABASE_URL')
+       )
+   }
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
 cloudinary.config( 
   cloud_name = "wambui", 
   api_key = "824351776517753", 
   api_secret = "bNqxpHAJwFY-im5zSlnm8FVodXY" 
 )
+ALLOWED_HOSTS = []
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
